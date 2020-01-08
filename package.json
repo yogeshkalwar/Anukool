@@ -2,19 +2,50 @@
 {
   "name": "react-native-anukool",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Library for native components, Android/iOS",
+  "main": "lib/index.js",
+  "files":[
+    "lib",
+    "index.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
-  "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
+  "author": "Yogesh Kalwar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yogeshkalwar/Anukool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yogeshkalwar/Anukool/issues"
+  },
+  "homepage": "https://github.com/yogeshkalwar/Anukool#readme",
+  "scripts": {
+    "lint": "eslint test/spec/**/*.js lib/**/*.js",
+    "test": "mocha --require test/compiler.js --recursive test/spec/*.js --exit"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-module-resolver": "^2.5.0",
+    "eslint": "^2.0.0",
+    "eslint-config-formidable": "^2.0.1",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "metro-bundler": "^0.22.1",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "mocha": "^6.0.0",
+    "react": "^16.4.0",
+    "react-native": "~0.60.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "prop-types": "^15.5.10"
   }
 }

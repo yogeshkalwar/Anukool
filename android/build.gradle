@@ -1,8 +1,8 @@
 
 buildscript {
     repositories {
-        jcenter()
         google()
+        jcenter()
     }
 
     dependencies {
@@ -13,14 +13,14 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
+        buildToolsVersion = "28.0.3"
+        minSdkVersion = 16
+        compileSdkVersion = 28
+        targetSdkVersion = 28
         versionCode 1
-        versionName "0.1"
+        versionName "1.0"
     }
     lintOptions {
         abortOnError false
@@ -29,12 +29,19 @@ android {
 
 repositories {
     mavenCentral()
+    maven {
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url("$rootDir/../node_modules/react-native/android")
+    }
+    maven {
+        // Android JSC is installed from npm
+        url("$rootDir/../node_modules/jsc-android/dist")
+    }
+
     google()
+    jcenter()
 }
 
 dependencies {
-    implementation 'com.facebook.react:react-native:+'
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.annotation:annotation:1.0.2'
+    compile 'com.facebook.react:react-native:+'
 }
-  

@@ -5,7 +5,6 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNAnukool : NSObject <RCTBridgeModule>
+@interface Anukool : NSObject <RCTBridgeModule>
 
 @end
-  

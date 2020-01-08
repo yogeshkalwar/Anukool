@@ -10,10 +10,10 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
-public class RNAnukoolPackage implements ReactPackage {
+public class AnukoolPackage implements ReactPackage {
     @Override
-    public List<NativeModule> createNativeModules(final ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNAnukoolModule(reactContext));
+    public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
+      return Arrays.<NativeModule>asList(new AnukoolModule(reactContext));
     }
 
     // Deprecated from RN 0.47
@@ -22,7 +22,7 @@ public class RNAnukoolPackage implements ReactPackage {
     }
 
     @Override
-    public List<ViewManager> createViewManagers(final ReactApplicationContext reactContext) {
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
       return Collections.emptyList();
     }
 }

@@ -1,7 +1,7 @@
 
-#import "RNAnukool.h"
+#import "Anukool.h"
 
-@implementation RNAnukool
+@implementation Anukool
 
 - (dispatch_queue_t)methodQueue
 {
@@ -10,4 +10,3 @@
 RCT_EXPORT_MODULE()
 
 @end
-  
