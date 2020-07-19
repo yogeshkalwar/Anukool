@@ -45,7 +45,7 @@
     "react-native": "~0.60.4"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "prop-types": "^15.5.10"
   }
 }
