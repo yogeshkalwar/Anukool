@@ -42,7 +42,7 @@
     "metro-react-native-babel-preset": "^0.55.0",
     "mocha": "^6.0.0",
     "react": "^16.4.0",
-    "react-native": "~0.60.4"
+    "react-native": "~0.62.3"
   },
   "dependencies": {
     "lodash": "^4.17.11",
